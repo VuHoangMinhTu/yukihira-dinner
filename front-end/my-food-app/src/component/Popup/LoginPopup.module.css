@@ -1,0 +1,138 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  backdrop-filter: blur(4px);
+}
+
+.popup {
+  background: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  border-radius: 16px;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #999;
+}
+
+.title {
+  text-align: center;
+  color: #c92127;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0 12px;
+  transition: 0.3s;
+}
+
+.inputWrapper:focus-within {
+  border-color: #c92127;
+  box-shadow: 0 0 0 2px rgba(201, 33, 39, 0.1);
+}
+
+.inputIcon {
+  color: #aaa;
+  margin-right: 10px;
+}
+
+.inputWrapper input {
+  flex: 1;
+  border: none;
+  padding: 12px 0;
+  outline: none;
+  font-size: 16px;
+}
+
+.toggleVisible {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 14px;
+  background: #c92127;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.submitBtn:hover {
+  background: #a51b20;
+}
+
+.errorBanner {
+  background: #fff1f0;
+  border: 1px solid #ffa39e;
+  color: #cf1322;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.toggleMode {
+  text-align: center;
+  margin-top: 20px;
+  color: #c92127;
+  cursor: pointer;
+  font-size: 14px;
+}

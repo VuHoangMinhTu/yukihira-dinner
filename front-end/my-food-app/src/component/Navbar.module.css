@@ -1,0 +1,147 @@
+.navbar {
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e67e22; /* Màu cam thương hiệu Yukihira */
+    text-decoration: none;
+}
+
+.navLinks {
+    display: flex;
+    gap: 30px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navLink:hover {
+    color: #e67e22;
+}
+
+.navActions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Style Giỏ hàng */
+.cartBtn {
+    position: relative;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.cartBadge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: #e74c3c; /* Màu đỏ */
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style Auth Links (Khi chưa login) */
+.authLinks {
+    display: flex;
+    gap: 10px;
+}
+
+.authBtn, .registerBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.authBtn {
+    background: #f8f9fa;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.authBtn:hover {
+    background: #e9ecef;
+}
+
+.registerBtn {
+    background: #2ecc71; /* Màu xanh */
+    color: white;
+    border: none;
+}
+
+.registerBtn:hover {
+    background: #27ae60;
+}
+
+/* Style User Profile (Khi đã login thành công) */
+.userProfile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #eee;
+}
+
+.avatarIcon {
+    color: #e67e22;
+}
+
+.userName {
+    font-weight: 500;
+    color: #333;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.logoutBtn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
+    padding: 5px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.logoutBtn:hover {
+    background: #e74c3c;
+    color: white;
+}

@@ -1,0 +1,68 @@
+.container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.thumb {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.info {
+    flex: 1
+}
+
+.name {
+    font-weight: 600
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 8px
+}
+
+.qty {
+    padding: 0 8px
+}
+
+.remove {
+    margin-left: 12px;
+    color: #c00
+}
+
+.price {
+    width: 120px;
+    text-align: right;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    align-items: center
+}
+
+.checkout {
+    background: #2b8aef;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px
+}

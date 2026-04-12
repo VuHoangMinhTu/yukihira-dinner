@@ -1,0 +1,16 @@
+name: mydinnerproject
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: mydinnerproject
+    ports:
+      - "5432:5432"
+    volumes:
+      - prostgresdata:/var/lib/postgresql/data
+# Tạo ổ cứng ảo(do Docker tạo) chứa data prostgresdata trên may mình
+volumes:
+    prostgresdata:
